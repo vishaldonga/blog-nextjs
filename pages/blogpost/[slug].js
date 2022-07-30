@@ -1,12 +1,20 @@
 import React from 'react'
 import {useRouter} from 'next/router'
+import styles from "../../styles/BlogPost.module.css";
 
 const Slug = () => {
     const router = useRouter()
     const {slug} = router.query;
     
   return (
-    <div>{slug}</div>
+    <div className={styles.container}>
+      <main className={styles.main}>
+      <h1>Title of the page {slug}</h1>
+      <hr />
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ea maiores, a obcaecati nostrum veniam fuga atque recusandae, minus mollitia ipsum debitis error distinctio, nisi laudantium dolores repellat blanditiis. Veniam!</div>
+      
+      </main>
+    </div>
   )
 }
 

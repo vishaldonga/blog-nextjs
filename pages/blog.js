@@ -1,9 +1,30 @@
-import React from 'react'
+import React from "react";
+import styles from "../styles/Blog.module.css";
+import Link from 'next/link'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
-  )
-}
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <div className="blogs">
+          <div className="blogItem">
+            <Link href={'/blogpost/javascript'}>
+            <h3 className={styles.blogItemh3}>Hwo to learn JS in 2022?</h3>
+            </Link>
+            <p>Js is best language</p>
+          </div>
+          <div className="blogItem">
+            <h3>Hwo to learn JS in 2022?</h3>
+            <p>Js is best language</p>
+          </div>
+          <div className="blogItem">
+            <h3>Hwo to learn JS in 2022?</h3>
+            <p>Js is best language</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+};
 
-export default Blog
+export default Blog;
