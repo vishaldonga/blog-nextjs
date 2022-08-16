@@ -20,12 +20,12 @@ const Blog = (props) => {
     <div className={styles.container}>
       <main className={styles.main}>
         <div className="blogs">
-          {blogs.map(({ title, slug, content }) => (
+          {blogs.map(({ title, slug, metadesc }) => (
             <div key={slug} className="blogItem">
               <Link href={`/blogpost/${slug}`}>
                 <h3 className={styles.blogItemh3}>{title}</h3>
               </Link>
-              <p>{content.substr(0, 90)}</p>
+              <p>{metadesc.substr(0, 90)}</p>
             </div>
           ))}
         </div>

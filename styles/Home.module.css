@@ -40,20 +40,14 @@
 }
 
 .title {
-  margin: 0;
+  margin: 20px;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .title,
 .description {
   text-align: center;
-}
-
-.description {
-  margin: 2rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
 }
 
 .code {
@@ -121,7 +115,7 @@ justify-content: center;
 }
 
 .myImg {
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 @media (max-width: 600px) {
@@ -142,4 +136,7 @@ justify-content: center;
   .logo img {
     filter: invert(1);
   }
+}
+.h2 {
+  font-size: 2.5rem;
 }

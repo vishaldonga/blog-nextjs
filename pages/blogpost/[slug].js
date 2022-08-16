@@ -17,6 +17,9 @@ const Slug = (props) => {
   //       setBlog(data);
   //     });
   // }, [router.isReady]);
+  function createMarkup(content) {
+    return {__html: content};
+  }
 
   return (
     <div className={styles.container}>
@@ -24,7 +27,7 @@ const Slug = (props) => {
         <h1>{blog && blog.title}</h1>
         <h3>{blog && blog.author}</h3>
         <hr />
-        <div>{blog && blog.content}</div>
+        {blog && <div dangerouslySetInnerHTML={createMarkup(blog.content)} />}
       </main>
     </div>
   );
