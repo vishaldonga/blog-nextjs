@@ -21,7 +21,7 @@ export default function Home() {
           height={237}
           width={237}
         />
-        
+
         <div className="blogs">
           <h2 className={styles.h2}>Popular blogs</h2>
           <div className="blogItem">
